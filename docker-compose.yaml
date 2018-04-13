@@ -1,0 +1,8 @@
+version: '2'
+services:
+  rstudio:
+    build: rstudio
+    ports:
+      - "8787:8787"
+    volumes:
+      - /home/henrikn/Projekt/:/home/rstudio/henrikn/:z
