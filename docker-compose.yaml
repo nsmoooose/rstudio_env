@@ -6,3 +6,5 @@ services:
       - "8787:8787"
     volumes:
       - /home/henrikn/Projekt/:/home/rstudio/henrikn/:z
+    environment:
+      PASSWORD: kaka

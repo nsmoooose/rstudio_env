@@ -27,7 +27,7 @@ Build and start it::
   sudo make up
 
 Start a browser on: http://localhost:8787 and login using
-'rstudio' as username and password.
+'rstudio' as username and 'kaka' as password.
 
 
 Installed packages
