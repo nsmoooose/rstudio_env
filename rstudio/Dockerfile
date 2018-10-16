@@ -6,3 +6,6 @@ RUN apt-get install -y libxml2-dev
 RUN Rscript -e "install.packages(c('RMySQL', 'knitr', 'digest', 'Rcpp', 'htmltools', 'caTools'), repos='http://cran.us.r-project.org')"
 RUN Rscript -e "install.packages(c('bitops', 'jsonlite', 'base64enc', 'rprojroot', 'rmarkdown'), repos='http://cran.us.r-project.org')"
 RUN Rscript -e "install.packages(c('tidyverse'), repos='http://cran.us.r-project.org')"
+
+RUN apt-get install -y libpq-dev
+RUN Rscript -e "install.packages(c('RPostgreSQL'), repos='http://cran.us.r-project.org')"
