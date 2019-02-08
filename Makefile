@@ -6,6 +6,8 @@ empty:
 	@echo "  start           Start all containers."
 	@echo "  status          List the status of the current containers."
 	@echo ""
+	@echo "  image           Build just the image and create a tag"
+	@echo ""
 
 build:
 	@docker-compose build
@@ -18,3 +20,6 @@ stop:
 
 ps:
 	@docker-compose ps
+
+image:
+	@docker build rstudio -t rstudio_env
